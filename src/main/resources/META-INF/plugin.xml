@@ -1,0 +1,27 @@
+<idea-plugin>
+    <id>com.martin.plugin.Synthetic2ViewBindingPlugin</id>
+    <name>Synthetic2ViewBindingPlugin</name>
+    <vendor email="hy569835826@163.com" url="https://github.com/MartinHY">Martin</vendor>
+
+    <description> ### This plugin is used to migrate kotlin Synthetic code to ViewBinding :
+        - use layout id like R.layout.app_fragment_demo , generate code AppFragmentDemoBinding
+        - make old Synthetic code 'app_test_request' to be like that 'binding.appDetail'(Camel-Case)</description>
+
+    <!-- please see https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html
+         on how to target different products -->
+    <!--    <depends>com.intellij.modules.platform</depends>-->
+    <depends>org.jetbrains.kotlin</depends>
+    <depends>org.jetbrains.android</depends>
+    <depends>com.intellij.modules.androidstudio</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+        <action id="Synthetic2ViewBindingAction" class="com.martin.plugin.Synthetic2ViewBindingAction"
+                text="Synthetic2ViewBinding" description="Synthetic2ViewBinding">
+            <add-to-group group-id="EditorPopupMenu" anchor="first"/>
+        </action>
+    </actions>
+</idea-plugin>

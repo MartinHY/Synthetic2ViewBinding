@@ -114,6 +114,11 @@ fun doWriteAction(viewIdInfoAsList: List<ViewInfo>) {
 }
 ```
 
+### 插件安装
+- 把包下下来 https://github.com/MartinHY/Synthetic2ViewBinding/releases/tag/V1.0.1
+- idea 本地安装
+- 迁移完删除 0.0
+
 ### 插件使用方式
 
 选中代码中的 layout id  , 右键选中 Synthetic2ViewBinding :
